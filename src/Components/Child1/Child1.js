@@ -1,16 +1,16 @@
 import React from 'react'
 import "./child.css"
 
-const Child1 = () => {
+const Child1 = ({name,age,fct}) => {
+ 
     return (
         <div className="child1"><div className="card-container">
-            <span className="pro">PRO</span>
             <img className="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-            <h3>Ricky Park</h3>
+            <h3>{name }// {age}</h3>
             <h6>New York</h6>
             <p>User interface designer and <br /> front-end developer</p>
             <div className="buttons">
-                <button className="primary">
+                <button className="primary" onClick={()=>fct()}>
                     Message
                 </button>
                 <button className="primary ghost">

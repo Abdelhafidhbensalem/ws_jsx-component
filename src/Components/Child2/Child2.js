@@ -4,7 +4,9 @@ import { Component } from "react";
 class Child2 extends Component {
     
     render() { 
-        return (<>Child2</>);
+        return (<>
+        {this.props.children}
+        </>);
     }
 }
  

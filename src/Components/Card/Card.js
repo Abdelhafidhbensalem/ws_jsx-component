@@ -12,7 +12,7 @@ const Card = ({el,hello}) => {
             <h2>{el.title}</h2>
             <div className="size">
               <h3>images details :</h3>
-              {el.images.map(el => <img style={{ width: "30px", height: "30px" }} src={el} alt="" />)}
+              {el.images.map((el , i) => <img style={{ width: "30px", height: "30px" }} key={i} src={el} alt="" />)}
             </div>
           </div>
         </div>
